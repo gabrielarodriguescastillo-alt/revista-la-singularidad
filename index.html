@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA SINGULARIDAD — Revista de Ciencia y Física UFV</title>
+  <meta name="description" content="Revista científica oficial de la Sociedad de Física de la Universidad Francisco de Vitoria. Divulgación de frontera con rigor formal, matemáticas y pasión por el asombro.">
+  
+  <!-- Favicon standard -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛</text></svg>">
+
+  <!-- Google Fonts: Editorial Serif & Clean Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- KaTeX for High-Precision Mathematical Rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Metadata Bar -->
+  <aside class="top-edition-bar">
+    <div class="issn">REVISTA CIENTÍFICA ESTUDIANTIL • VOL. 1 — SEMESTRE 2 2027</div>
+    <div class="university-tag">UNIVERSIDAD FRANCISCO DE VITORIA • MADRID</div>
+  </aside>
+
+  <!-- Newspaper Masthead -->
+  <header class="site-header">
+    <div class="masthead-container">
+      <div class="masthead-sub-top">Sociedad de Física UFV Presenta</div>
+      <h1 class="masthead-title">LA SINGULARIDAD</h1>
+      <p class="masthead-tagline">"Donde las leyes del universo convergen con la curiosidad humana"</p>
+      
+      <div class="masthead-rules">
+        <span class="rule-line"></span>
+        <span class="rule-symbol">⚛</span>
+        <span class="rule-line"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Editorial Control Bar (Filters & Search) -->
+  <nav class="controls-section" aria-label="Navegación de secciones">
+    <div class="controls-container">
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-section="all">Todos los Artículos</button>
+        <button class="filter-btn" data-section="Editorial">Editorial</button>
+        <button class="filter-btn" data-section="En el Horizonte">En el Horizonte</button>
+        <button class="filter-btn" data-section="Physics Lab">Physics Lab</button>
+        <button class="filter-btn" data-section="Voces de la Ciencia">Voces de la Ciencia</button>
+        <button class="filter-btn" data-section="Física Pop">Física Pop</button>
+        <button class="filter-btn" data-section="Tribuna Estudiantil">Tribuna Estudiantil</button>
+        <button class="filter-btn" data-section="Reto de Fermi">Reto de Fermi</button>
+      </div>
+
+      <div class="search-and-issue">
+        <span class="issue-pill">Edición Inaugural 2027</span>
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Buscar por tema, autor..." aria-label="Buscar artículos">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Editorial Layout -->
+  <main class="main-layout">
+    <!-- Featured Hero Article Container -->
+    <section class="featured-section" id="featured-article-container" aria-label="Reportaje de portada destacado">
+      <!-- Injected dynamically by app.js -->
+    </section>
+
+    <!-- Section Heading Bar -->
+    <div class="section-heading-bar">
+      <h2 class="section-title">Índice Editorial & Artículos de Fondo</h2>
+      <div class="articles-count-badge">
+        <span id="stat-total-articles">8</span> Artículos en catálogo
+      </div>
+    </div>
+
+    <!-- Editorial Cards Grid -->
+    <section class="articles-grid" id="articles-grid" aria-label="Artículos de la revista">
+      <!-- Injected dynamically by app.js -->
+    </section>
+  </main>
+
+  <!-- Full Article Modal / Reader View -->
+  <div class="modal-overlay" id="modal-overlay"></div>
+  <div class="article-modal" id="article-modal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar artículo">✕</button>
+      <div id="modal-article-body">
+        <!-- Injected dynamically when opening article -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Institutional Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>LA SINGULARIDAD</h4>
+        <p>Publicación científica semestral editada por la Sociedad de Física de la Universidad Francisco de Vitoria. Impulsamos la investigación, el rigor matemático en LaTeX y el pensamiento crítico universitario.</p>
+        <p><strong>Sede:</strong> Despacho de Sociedades Estudiantiles, Módulo 2. Campus UFV Pozuelo de Alarcón, Madrid.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Junta Directiva SF-UFV</h4>
+        <ul>
+          <li><strong>Presidencia:</strong> Gabriela Rodrigues Castillo</li>
+          <li><strong>Vicepresidencia:</strong> Alejandro Gómez Serrano</li>
+          <li><strong>Dirección Científica:</strong> Lucía Martínez Alonso</li>
+          <li><strong>Software & Autom.:</strong> Carlos Vega Ruiz</li>
+          <li><strong>Comunicación & RRSS:</strong> Elena Morales Vidal</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Ecosistema Científico</h4>
+        <ul>
+          <li><a href="mailto:comunicacion.fisica@ufv.es">Contacto Editorial</a></li>
+          <li><a href="mailto:afc@ufv.es">Convalidación Créditos AFC</a></li>
+          <li><a href="javascript:void(0)" onclick="window.print()">Imprimir Edición Actual</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">Código Abierto en GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026–2027 Sociedad de Física UFV. Publicación bajo licencia académica abierta Creative Commons BY-NC-SA 4.0.</div>
+      <div>ISSN: En trámite institucional • Diseñado para visualización digital y GitHub Pages</div>
+    </div>
+  </footer>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
